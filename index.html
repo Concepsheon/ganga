@@ -1,0 +1,303 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        
+        <title>Ganga Library</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style type="text/css">
+          html, body {
+            height: 100%;
+          }
+          
+          body {
+            background: rgb(238, 238, 238);
+            position: relative;
+          }
+          
+          .navbar-default {
+            border-radius: 0;
+            margin-bottom: 0;
+          }
+          
+          .navbar-brand {
+            margin-top: -5px;
+          }
+          
+          .navbar-nav>li>.dropdown-menu {
+            margin-top: 20px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+          }
+
+        .navbar-default .navbar-nav>li>a {
+          font-weight: bold;
+        }
+        
+        .mega-dropdown {
+          position: static !important;
+          width: 100%;
+        }
+        
+        .mega-dropdown-menu {
+          padding: 20px 0px;
+          width: 100%;
+          box-shadow: none;
+          -webkit-box-shadow: none;
+        }
+        
+        .mega-dropdown-menu:before {
+          content: "";
+          border-bottom: 15px solid #fff;
+          border-right: 17px solid transparent;
+          border-left: 17px solid transparent;
+          position: absolute;
+          top: -15px;
+          left: 285px;
+          z-index: 10;
+        }
+        
+        .mega-dropdown-menu:after {
+          content: "";
+          border-bottom: 17px solid #ccc;
+          border-right: 19px solid transparent;
+          border-left: 19px solid transparent;
+          position: absolute;
+          top: -17px;
+          left: 283px;
+          z-index: 8;
+        }
+        
+        .mega-dropdown-menu > li > ul {
+          padding: 0;
+          margin: 0;
+        }
+        
+        .mega-dropdown-menu > li > ul > li {
+          list-style: none;
+        }
+        
+        .mega-dropdown-menu > li > ul > li > a {
+          display: block;
+          padding: 3px 20px;
+          clear: both;
+          font-weight: normal;
+          line-height: 1.428571429;
+          color: #999;
+          white-space: normal;
+        }
+        
+        .mega-dropdown-menu > li ul > li > a:hover,
+        .mega-dropdown-menu > li ul > li > a:focus {
+          text-decoration: none;
+          color: #444;
+          background-color: #f5f5f5;
+        }
+        
+        .mega-dropdown-menu .dropdown-header {
+          color: #428bca;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        
+        .mega-dropdown-menu form {
+          margin: 3px 20px;
+        }
+        
+        .mega-dropdown-menu .form-group {
+          margin-bottom: 3px;
+        }
+        
+        .content {
+            background: url('ganga.png');
+            margin-top: -55px;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+        
+        .content_2 {
+            background: url('ganga_2.png');
+            margin-top: -55px;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+        
+        .content_3 {
+            background: url('ganga_3.png');
+            margin-top: -37px;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+        
+        .back-to-top {
+            display: none;
+            position: fixed;
+            right: 25px;
+            bottom: 30px;
+            z-index: 1;
+        }
+        
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="back-to-top">
+            <a href="#header-one" class="btn btn-lg btn-warning"><span class="glyphicon glyphicon-chevron-up"></span> Back To Top</a>
+        </div>
+        <header id="header-one">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"><img class="img-responsive" src="http://www.gangalib.org/images/ganga_header1.png" alt="Ganga Library" width="200"/></a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    
+                  <ul class="nav navbar-nav">
+                    <li class="dropdown mega-dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></a>
+            
+                      <ul class="dropdown-menu mega-dropdown-menu row">
+                        <li class="col-sm-3">
+                          <ul>
+                            <li class="dropdown-header">Your Essays</li>
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                  <a href="#"><img src="essay11.jpg" class="img-responsive" alt="product 1"></a>
+                                  <h4><small>Write An Essay</small></h4>
+                                  <button class="btn btn-primary" type="button">Read More</button>
+                                  <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Donate</button>
+                                </div>
+                                <!-- End Item -->
+                                <div class="item">
+                                  <a href="#"><img src="essay2.jpg" class="img-responsive" alt="product 2"></a>
+                                  <h4><small>Maria Goeppert-Mayer</small></h4>
+                                  <button class="btn btn-primary" type="button">Read More</button>
+                                  <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Donate</button>
+                                </div>
+                                <!-- End Item -->
+                                <div class="item">
+                                  <a href="#"><img src="essay12.jpg" class="img-responsive" alt="product 3"></a>
+                                  <h4><small>Alfred Nobel</small></h4>
+                                  <button class="btn btn-primary" type="button">Read More</button>
+                                  <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Donate</button>
+                                </div>
+                                <!-- End Item -->
+                              </div>
+                              <!-- End Carousel Inner -->
+                            </div>
+                            <!-- /.carousel -->
+                            <li class="divider"></li>
+                            <li><a href="#">Submit Your Essay <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+                          </ul>
+                        </li>
+                        <li class="col-sm-3">
+                          <ul>
+                            <li class="dropdown-header">About</li>
+                            <li><a href="#">Alfred Nobel</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Volunteers</a></li>
+                            <li><a href="#">Donors</a></li>
+                            <li><a href="#">Vision &amp; Mission</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Advice</li>
+                            <li><a href="#">Buffet &amp; Gates' Advice</a></li>
+                          </ul>
+                        </li>
+                        <li class="col-sm-3">
+                          <ul>
+                            <li class="dropdown-header">Laureates</li>
+                            <li><a href="#">Nobel Laureates</a></li>
+                            <li><a href="#">USA, Sci Tech Laureates</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Ganga Resources</li>
+                            <li><a href="#">Media</a></li>
+                            <li><a href="#">Nobel Laureates Books</a></li>
+                            <li><a href="#">Nobelists' Medal Cash Philanthropy</a></li>
+                            <li><a href="#">More</a></li>
+                          </ul>
+                        </li>
+                        <li class="col-sm-3">
+                          <ul>
+                            <li class="dropdown-header">Ganga Name</li>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Azerbaijani</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Kannada</a></li>
+                            <li><a href="#">Portuguese</a></li>
+                            <li><a href="#">Russian</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+            
+                    </li>
+                  </ul>
+                  
+                  <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+        </header>
+        <div class="content"></div>
+        <div class="content_2"></div>
+        <div class="content_3"></div>
+
+        <!--[if lte IE 9]>
+
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+
+        <![endif]-->
+        
+        
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. 
+
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview');
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        
+        -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(window).scroll(function(){
+                
+                // Show nav on scroll
+                if ($(this).scrollTop() > 200) {
+                    $('.back-to-top').fadeIn(500);
+                } else {
+                    $('.back-to-top').fadeOut(500);
+                }
+                
+            });
+        </script>
+    </body>
+</html>
