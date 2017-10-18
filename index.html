@@ -13,6 +13,7 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <style type="text/css">
           html, body {
             height: 100%;
@@ -134,7 +135,7 @@
         
         .content_3 {
             background: url('ganga_3.png');
-            margin-top: -37px;
+            margin-top: -30px;
             background-position: center;
             background-repeat: no-repeat;
             height: 100%;
@@ -147,6 +148,17 @@
             bottom: 30px;
             z-index: 1;
         }
+        
+        footer {
+          margin-top: 20px;
+        }
+        
+        .social-links a {
+          color: white;
+          font-size: 28px;
+          padding: 10px;
+        }
+        
         
         </style>
     </head>
@@ -268,6 +280,33 @@
         <div class="content"></div>
         <div class="content_2"></div>
         <div class="content_3"></div>
+        
+        <footer>
+          <div style="background: rgb(223,234,246); padding: 20px 10px;">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                  <p style="font-size: 12px;">“One comes to be of just such stuff as that on which the mind is set” - Maithri Upanishath, VI.34:3
+                  peace that is found in libraries and laboratories…” - Louis Pasteur</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                  <div class="social-links pull-right">
+                    <a href="#"><span class="fa fa-linkedin"></span></a>
+                    <a href="#"><span class="fa fa-twitter"></span></a>
+                    <a href="#"><span class="fa fa-qrcode"></span></a>
+                    <a href="#"><span class="fa fa-tree"></span></a>
+                    <a href="#"><span class="fa fa-star"></span></a>
+                    <a href="#"><span class="fa fa-heart"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div style="background: #c3d0e1; text-align: center; padding: 10px 20px;">
+            <p style="color: white;">&copy; 2017 Ganga Library Inc. All Rights reserved. <span class="glyphicon glyphicon-envelope"></span> info@gangalib.org</p>
+          </div>
+        </footer>
 
         <!--[if lte IE 9]>
 
@@ -296,7 +335,6 @@
                 } else {
                     $('.back-to-top').fadeOut(500);
                 }
-                
             });
         </script>
     </body>
